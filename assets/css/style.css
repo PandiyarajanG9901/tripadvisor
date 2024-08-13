@@ -1,0 +1,685 @@
+body {
+  background-color: #fff;
+  font-family: "Trip Sans Med", sans-serif;
+}
+
+/* -------------------HEADER------------------------- */
+header {
+  margin-top: 20px;
+}
+
+header .fa-bars {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 188px;
+  flex: 1;
+}
+
+.search {
+  position: relative;
+  flex: 3;
+  margin-left: 25px;
+}
+
+.search i {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  font-size: 24px;
+}
+
+.searchbar {
+  border-radius: 30px;
+  border: solid #dddbdb;
+  padding: 15px 30px;
+  width: 70%;
+}
+
+.menus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 4;
+}
+
+.menus a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 3px;
+  border-radius: 20px;
+}
+
+.menus .menu-icon {
+  background-color: white;
+  transition: 0.4s;
+}
+
+.menus .menu-icon:hover {
+  background-color: #ededed;
+}
+
+.menus a span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.menus i {
+  font-size: 20px;
+}
+
+.connect {
+  background-color: black;
+  padding: 10px 16px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.connect span {
+  color: white;
+}
+
+.connect:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+/* -----------------------MAIN---------------------- */
+main {
+  margin-top: 45px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.title span:nth-child(1) {
+  color: #ff5d5d;
+}
+
+/* -----------------------NAVIGATION--------------------- */
+.navigation {
+  margin: 25px 0 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+.navigation span {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.navigation i {
+  margin-left: 5px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 16.6666%;
+  padding: 20px 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.navigation a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navigation a:nth-child(2),
+.navigation a:nth-child(3),
+.navigation a:nth-child(4),
+.navigation a:nth-child(5),
+.navigation a:nth-child(6),
+.navigation a:nth-child(7) {
+  margin: 0 5px;
+}
+
+.navigation a:nth-child(1) {
+  margin-right: 5px;
+}
+
+.navigation a:nth-child(8) {
+  margin-left: 5px;
+}
+
+.navigation .hide {
+  display: none;
+}
+
+/* ------------------------BIG PHOTOS-------------------- */
+.photos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.big-photo {
+  max-width: 60%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 2px;
+  flex: 2;
+}
+
+.small-photos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.small-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.small-photos img:nth-child(1) {
+  margin-bottom: 2px;
+}
+
+/* -----------------MINI MENU------------------ */
+.browser {
+  padding: 15px 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.direction span,
+.direction i {
+  margin-right: 5px;
+}
+
+/* --------------------PRESENTATION---------------- */
+.presentation {
+  margin: 30px 0;
+  flex: 3;
+}
+
+.presentation h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.presentation p {
+  font-family: "serif";
+  font-size: 21px;
+  padding-right: 70px;
+}
+
+/* ------------------------CARTE----------------------- */
+.organiser {
+  flex: 2;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.texte {
+  background-color: #fe5d5d;
+  border-radius: 15px 15px 0 0;
+  padding: 30px 30px 50px 30px;
+}
+
+.texte h2 {
+  font-size: 27px;
+  font-weight: 700;
+  margin-right: 20px;
+  line-height: 30px;
+}
+
+.texte p {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.texte a {
+  text-decoration: none;
+  background-color: #333333;
+  color: white;
+  padding: 18px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.carte img {
+  border-radius: 0 0 15px 15px;
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+/* ------------------SECTION CAROUSEL-------------- */
+h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+h2.container {
+  margin-top: 50px;
+}
+
+/* -------------------TEXTE CAROUSEL--------------- */
+.overview {
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texte2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
+  margin-right: 20px;
+  min-width: 250px;
+}
+
+.texte2 h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.texte2 p {
+  font-size: 21px;
+  margin-top: 25px;
+  font-family: serif;
+}
+
+.texte2 a {
+  margin-top: 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.texte2 a:hover {
+  color: rgba(0, 0, 0, 0.548);
+}
+
+/* --------------------CAROUSEL--------------------- */
+.carousel {
+  flex: 3;
+  display: flex;
+  overflow-x: scroll;
+  height: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.card2 {
+  max-width: 270px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  position: relative;
+}
+
+.card2 .portrait {
+  max-height: 204px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card2 .mini-logo {
+  position: absolute;
+  left: 5px;
+  top: 147px;
+}
+
+.white-circle {
+  border-radius: 50%;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.white-circle:hover + .fa-heart {
+  color: red;
+}
+
+.card2 .fa-heart {
+  font-size: 25px;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  pointer-events: none;
+}
+
+.card2 h3 {
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+
+.card2 .score {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.card2 .score i {
+  color: #26b882;
+}
+
+footer {
+  background-color: #faf1ec;
+}
+
+/* -----------------FOOTER------------------- */
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+footer img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-weight: 700;
+  transition: 0.4s ease;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #26b882;
+  background-color: black;
+  border-radius: 10px;
+}
+
+section.container {
+  padding-bottom: 30px;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.623);
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.container-form {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.container-form > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px 30px;
+  position: relative;
+}
+
+.container-form > div i {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 20px;
+}
+
+.container-form p {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 12px 20px;
+  font-family: "Trip Sans Med", sans-serif;
+  font-size: 17px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+#submit {
+  background-color: #2bbd87;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #34e0a19d;
+}
+
+.container-form > div img {
+  width: 15%;
+  margin-top: 20px;
+}
+
+/* ---------------MEDIA QUERIES----------------------- */
+
+/* ---------------MEDIA 1184px----------------------- */
+@media (max-width: 1184px) {
+  .navigation .hide {
+    display: flex;
+  }
+
+  .navigation {
+    flex-shrink: 0;
+    height: max-content;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .navigation a {
+    min-width: 21%;
+    min-height: 30px;
+  }
+
+  .navigation a:nth-child(even) {
+    margin: 10px 0 0 0;
+    padding: 11px 16px;
+  }
+
+  .navigation a:nth-child(odd) {
+    margin: 10px 0 0 0;
+    padding: 11px 16px;
+  }
+}
+
+/* ---------------MEDIA 1024PX----------------------- */
+@media (max-width: 1024px) {
+  .menu-icon span {
+    display: none;
+  }
+
+  .menus {
+    justify-content: space-around;
+  }
+}
+
+/* ---------------MEDIA 965px----------------------- */
+@media (max-width: 965px) {
+  .navigation a {
+    min-width: 19%;
+  }
+}
+
+/* ---------------MEDIA 768PX----------------------- */
+@media (max-width: 768px) {
+  .container {
+    max-width: 680px;
+    flex-direction: column;
+  }
+
+  header .container {
+    flex-direction: row;
+  }
+
+  header .fa-bars {
+    display: block;
+  }
+
+  header .container {
+    justify-content: space-between;
+  }
+
+  .container .icon {
+    width: 132px;
+    flex: 0;
+  }
+
+  .search {
+    flex: 0;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  .search i {
+    position: absolute;
+    top: 3px;
+    left: -22px;
+    font-size: 23px;
+  }
+
+  .menus {
+    display: none;
+  }
+
+  main .title {
+    font-size: 32px;
+  }
+
+  .navigation {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+
+  .navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navigation {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .navigation a {
+    min-width: 33%;
+    min-height: 16px;
+  }
+
+  .navigation span {
+    font-size: 18px;
+  }
+
+  .big-photo {
+    max-width: 100%;
+  }
+
+  .small-photos img {
+    display: none;
+  }
+
+  .presentation p {
+    padding: 0;
+  }
+
+  .container map {
+    flex-direction: column;
+  }
+
+  .overview {
+    flex-direction: column;
+  }
+
+  .carousel {
+    margin-top: 30px;
+  }
+
+  .card2 {
+    width: 80%;
+    max-width: none;
+  }
+}
